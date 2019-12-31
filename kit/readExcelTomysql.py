@@ -10,10 +10,10 @@ sheetName='20191231数据'
 data = pd.read_excel(filepath,sheet_name=sheetName)
 
 #建立数据库连接
-db = pymysql.connect('10.27.15.237','root','D5q9PKbkVFjSZt^%','autohome_hrbase')
+db = pymysql.connect('10.27.15.237','root','xxxx','xxxx')
 cursor = db.cursor()
 
-query=""" update t_2019timecapsule_info set study_minute=%s,townsman_count=%s,familyday=%s,hackerMatch=%s,OscarGoldenCup=%s,buy_house=%s,Recommend_count=%s,trip_date=%s WHERE usercode=%s"""
+query=""" update xxx set study_minute=%s,townsman_count=%s,familyday=%s,hackerMatch=%s,OscarGoldenCup=%s,buy_house=%s,Recommend_count=%s,trip_date=%s WHERE usercode=%s"""
 #迭代读取每行数据
 #values中元素有个类型的强制转换，否则会出错的
 #应该会有其他更合适的方式，可以进一步了解
